@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // 経路1を表示する関数
         var arrive  = 0
         var finish  = 0
-        if(checkTime+checeAttime<=17){
+        if(checkTime+checeAttime<=16){
             if (spot === "tokyo"){
                 routeContainer.innerHTML = ''; // 既存の経路をクリア
                 if(day==="土"||day==="日"){
