@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>	
+<meta charset="utf-8">
+<title>佐原観光検索</title>
+<meta name="description" content="サイトの概要を記載">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<form id="myForm">
+以下の画面より日付・出発時間・地点を選択してください
+<br>
+<div>
+    <label for="date-picker">日付を選択してください:</label>
+    <input type="date" id="date-picker" name="date-picker">
+</div>
+<br>
+出発地：
+<select name="spot">
+    <option value="">-地点を選択してください-</option>
+    <optgroup label="東京都">
+    <option value="tokyo">東京</option>
+    <option value="shinjyuku">新宿</option>
+    <option value="shinagawa">品川</option>
+    </optgroup>>
+    <optgroup label="千葉県">
+    <option value="narita">成田</option>
+    <option value="narita-airport">成田空港</option>
+    <option value="chiba">千葉</option>
+    <option value="sawara">佐原駅</option>
+    </optgroup>
+    <optgroup label="神奈川県">
+    <option value="yokohama">横浜</option>
+    </optgroup>
+</select>
+<br>
+到着地：
+<select name="backspot">
+    <option value="">-地点を選択してください-</option>
+    <optgroup label="東京都">
+    <option value="tokyo">東京</option>
+    <option value="shinjyuku">新宿</option>
+    <option value="shinagawa">品川</option>
+    </optgroup>>
+    <optgroup label="千葉県">
+    <option value="narita">成田</option>
+    <option value="narita-airport">成田空港</option>
+    <option value="chiba">千葉</option>
+    <option value="sawara">佐原駅</option>
+    </optgroup>
+    <optgroup label="神奈川県">
+    <option value="yokohama">横浜</option>
+    </optgroup>
+</select>
+<br>
+出発時間：
+<select name="time">
+    <option value="">-出発時間を選択してください-</option>
+    <option value="7">7時</option>
+    <option value="8">8時</option>
+    <option value="9">9時</option>
+    <option value="10">10時</option>
+    <option value="11">11時</option>
+    <option value="12">12時</option>
+    <option value="13">13時</option>
+    <option value="14">14時</option>
+</select>
+<br>
+滞在予定時間：
+<select name="attime">
+    <option value="">-滞在時間を選択してください-</option>
+    <option value="2">2時間</option>
+    <option value="3">3時間</option>
+    <option value="4">4時間</option>
+    <option value="5">5時間</option>
+    <option value="6">6時間</option>
+</select>
+<br>
+旅行タイプ：
+<select name="type">
+    <option value="">-旅行タイプを選択してください-</option>
+    <option value="kengaku">見学系</option>
+    <option value="taiken">体験系</option>
+    <option value="inou">伊能忠敬</option>
+    <option value="jinjya">神社・仏閣</option>
+    <option value="onogawa">小野川沿い街歩き</option>
+
+</select>
+<input type="submit" value="検索"> <!-- 検索ボタンを追加 -->
+</form>
+<script src="main.js"></script>
+<br>
+検索結果：
+<div id="routeContainer">
+    <!-- 経路をここに追加 -->
+</div>
+</body>
+</html>
