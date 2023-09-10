@@ -1942,6 +1942,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         
     }
+    
 });
 
     // 駅とURLを追加する関数
